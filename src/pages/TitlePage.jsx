@@ -2,24 +2,28 @@ import { Brain, HandHeart, List, NotebookPen } from "lucide-react";
 import ojt_logo from "../assets/images/ojt_logo.png";
 import InfoCard from "../components/InfoCard";
 import { SubChapter, TopChapter } from "../components/TableContents";
-import { Paragraph } from "../components/Text";
+import { Paragraph } from "../components/Components";
 import { LiaPrayingHandsSolid } from "react-icons/lia";
+import bg from "../assets/images/bg.jpg";
 
 const TitlePage = () => {
   return (
     <div className="min-h-full flex flex-col items-center justify-between text-gray-800 gap-10">
       <div
         id="title-page"
-        className="bg-white flex flex-col items-center w-full flex-1 text-center p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        style={{ backgroundImage: `url(${bg})` }}
+        className="relative flex flex-col items-center w-full flex-1 text-center p-12 rounded-b-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100 bg-cover bg-center"
       >
-        <div>
+        <div className="absolute inset-0 bg-white/80 rounded-lg pointer-events-none"></div>
+
+        <div className="relative z-10">
           <img
             src={ojt_logo}
             alt="OJT Portfolio"
             className="h-28 w-auto mb-6 object-contain"
           />
         </div>
-        <div>
+        <div className="relative z-10">
           <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl text-blue-900 font-bold mb-4">
             ON-THE-JOB-TRAINING
           </h1>
@@ -27,7 +31,7 @@ const TitlePage = () => {
             COLLEGE OF ART, SCIENCE, AND TECHNOLOGY
           </p>
         </div>
-        <div className="mt-9 p-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div className="mt-9 p-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center relative z-10">
           <InfoCard
             title="Student Name"
             description="Reinz Justine G. Dagang"
@@ -51,7 +55,7 @@ const TitlePage = () => {
 
       <div
         id="table-of-contents"
-        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <List className="h-8 w-8 mr-3 text-blue-900" />
@@ -72,20 +76,23 @@ const TitlePage = () => {
           <TopChapter title="Chapter I: Introduction" to="/introduction" />
           <SubChapter
             title="A. Importance of Internship"
-            to="/importance-of-internship"
+            to="/introduction#importance-of-internship"
           />
           <SubChapter
             title="B. Objectives of Internship"
-            to="/objectives-of-internship"
+            to="/introduction#objectives-of-internship"
           />
-          <SubChapter title="C. Time and Place" to="/time-and-place" />
+          <SubChapter
+            title="C. Time and Place"
+            to="/introduction#time-and-place"
+          />
           <TopChapter
             title="Chapter II: Company Profile"
             to="/company-profile"
           />
           <SubChapter
             title="A. Nature of the Agency"
-            to="/nature-of-the-agency"
+            to="/company-profile#nature-of-the-agency"
           />
           <SubChapter
             title="B. Mission/Vision/Goal Statement"
@@ -183,7 +190,7 @@ const TitlePage = () => {
 
       <div
         id="acknowledgements"
-        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <HandHeart className="h-8 w-8 mr-3 text-blue-900" />
@@ -238,7 +245,7 @@ const TitlePage = () => {
 
       <div
         id="student-trainee-prayer"
-        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <LiaPrayingHandsSolid className="h-8 w-8 mr-3 text-blue-900" />
@@ -296,7 +303,7 @@ const TitlePage = () => {
 
       <div
         id="personal-philosophy"
-        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <Brain className="h-8 w-8 mr-3 text-blue-900" />
@@ -332,7 +339,7 @@ const TitlePage = () => {
 
       <div
         id="career-plan"
-        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <NotebookPen className="h-8 w-8 mr-3 text-blue-900" />

@@ -8,7 +8,7 @@ export const TopChapter = ({ title, to }) => {
       className="block group transition-all duration-300"
     >
       <div className="flex items-end gap-3 cursor-pointer group-hover:pl-2 transition-all duration-300">
-        <p className="text-lg font-semibold text-gray-700 whitespace-nowrap group-hover:text-blue-900 transition-colors duration-300">
+        <p className="text-lg font-semibold text-blue-950 whitespace-nowrap group-hover:text-blue-900 transition-colors duration-300">
           {title}
         </p>
 
@@ -26,7 +26,7 @@ export const SubChapter = ({ title, to }) => {
       className="block pl-6 group transition-all duration-300"
     >
       <div className="flex items-end gap-3 cursor-pointer group-hover:pl-2 transition-all duration-300">
-        <p className="text-base font-regular text-gray-700 whitespace-nowrap group-hover:text-blue-900 transition-colors duration-300">
+        <p className="text-base font-regular text-blue-950 whitespace-nowrap group-hover:text-blue-900 transition-colors duration-300">
           {title}
         </p>
 

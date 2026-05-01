@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaFacebook } from "react-icons/fa";
 import { GraduationCap, Menu } from "lucide-react";
 
 const Header = ({ onMenuClick }) => {
@@ -16,11 +16,23 @@ const Header = ({ onMenuClick }) => {
         </span>
       </div>
 
-      <div className="flex items-center gap-4">
-        {/* GitHub */}
-        <button className="text-xl hover:text-blue-600 ">
+      <div className="flex items-center gap-2">
+        <a
+          href="https://www.facebook.com/reinz.justine.dagang/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl text-blue-600 hover:text-blue-800"
+        >
+          <FaFacebook />
+        </a>
+        <a
+          href="https://github.com/reinzjustinedagang"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl hover:text-blue-800"
+        >
           <FaGithub />
-        </button>
+        </a>
       </div>
     </header>
   );

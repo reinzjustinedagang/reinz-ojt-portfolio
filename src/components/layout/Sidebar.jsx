@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   HomeIcon,
@@ -11,8 +10,6 @@ import {
 import profile from "../../assets/images/profile.jpg";
 
 const Sidebar = ({ closeSidebar }) => {
-  const [active, setActive] = useState("/");
-
   const menuItems = [
     { to: "/", label: "Title Page", icon: HomeIcon },
     {
@@ -72,15 +69,14 @@ const Sidebar = ({ closeSidebar }) => {
           <NavLink
             key={to}
             to={to}
-            onClick={() => {
-              setActive(to);
-              closeSidebar?.();
-            }}
-            className={`flex items-center text-base px-4 py-2 transition ${
-              active === to
-                ? "bg-blue-800 text-white font-semibold"
-                : "text-gray-700 hover:bg-gray-100"
-            }`}
+            onClick={() => closeSidebar?.()}
+            className={({ isActive }) =>
+              `flex items-center text-base px-4 py-2 transition ${
+                isActive
+                  ? "bg-blue-800 text-white font-semibold"
+                  : "text-blue-950 hover:bg-gray-100"
+              }`
+            }
           >
             <Icon className="h-5 w-5 mr-3" />
             {label}
