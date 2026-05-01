@@ -34,7 +34,7 @@ const Sidebar = ({ closeSidebar }) => {
     },
     {
       to: "/appendices",
-      label: "V. Appendices",
+      label: "Appendices",
       icon: FileStack,
     },
   ];

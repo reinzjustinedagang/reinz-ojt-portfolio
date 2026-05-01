@@ -88,15 +88,15 @@ const TitlePage = () => {
           />
           <TopChapter
             title="Chapter II: Company Profile"
-            to="/company-profile"
+            to="/company#company-profile"
           />
           <SubChapter
             title="A. Nature of the Agency"
-            to="/company-profile#nature-of-the-agency"
+            to="/company#nature-of-the-agency"
           />
           <SubChapter
             title="B. Mission/Vision/Goal Statement"
-            to="/mission-vision-goal-statement"
+            to="/company#mission-vision"
           />
           <SubChapter
             title="C.History/Background of the Agency/Office"

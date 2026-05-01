@@ -1,10 +1,4 @@
-import {
-  BookOpenText,
-  CalendarClock,
-  Laptop,
-  LucideBrainCog,
-  Target,
-} from "lucide-react";
+import { BookOpenText, CalendarClock, Laptop, Target } from "lucide-react";
 import bg from "../assets/images/bg.jpg";
 import { AppCard, Card, Paragraph } from "../components/Components";
 import { SiGooglemeet, SiSlack } from "react-icons/si";
@@ -12,7 +6,7 @@ import { TbBrandGmail, TbFileSpreadsheet } from "react-icons/tb";
 import { FaChrome, FaUsersLine } from "react-icons/fa6";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { Gi3dStairs, GiBrainFreeze, GiLightBulb } from "react-icons/gi";
-import { RiSpeakFill } from "react-icons/ri";
+
 import { MdAutoGraph } from "react-icons/md";
 import { BsBuildingsFill } from "react-icons/bs";
 
@@ -133,7 +127,7 @@ const Introduction = () => {
       </div>
 
       <div
-        id="objectives-of-internship"
+        id="time-and-place"
         className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
