@@ -1,7 +1,9 @@
-import { List } from "lucide-react";
+import { Brain, HandHeart, List, NotebookPen } from "lucide-react";
 import ojt_logo from "../assets/images/ojt_logo.png";
 import InfoCard from "../components/InfoCard";
 import { SubChapter, TopChapter } from "../components/TableContents";
+import { Paragraph } from "../components/Text";
+import { LiaPrayingHandsSolid } from "react-icons/lia";
 
 const TitlePage = () => {
   return (
@@ -46,6 +48,7 @@ const TitlePage = () => {
           <InfoCard title="Adviser" description="Marites D. Escultor, MSIT" />
         </div>
       </div>
+
       <div
         id="table-of-contents"
         className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
@@ -128,64 +131,276 @@ const TitlePage = () => {
             to="/photocopy-registration-form"
           />
           <SubChapter
-            title="A. Photocopy Validated ID"
+            title="C. Photocopy Validated ID"
             to="/photocopy-validates-id"
           />
-          <SubChapter title="A. Parent's Consent" to="/parents-consent" />
+          <SubChapter title="D. Parent's Consent" to="/parents-consent" />
           <SubChapter
-            title="A. Medical Certificate"
+            title="E. Medical Certificate"
             to="/medical-certificate"
           />
           <SubChapter
-            title="A. Certificate of Good Moral Character & Application Letter"
+            title="F. Certificate of Good Moral Character & Application Letter"
             to="/certificate-of-good-moral-character-and-application-letter"
           />
-          <SubChapter title="A. Application Letter" to="/application-letter" />
-          <SubChapter title="A. Endoresement Letter" to="/endorsement-letter" />
+          <SubChapter title="G. Application Letter" to="/application-letter" />
+          <SubChapter title="H. Endorsement Letter" to="/endorsement-letter" />
           <SubChapter
-            title="A. Memorandum of Agreement"
+            title="I. Memorandum of Agreement"
             to="/memorandum-of-agreement"
           />
           <SubChapter
-            title="A. Daily Time Record (Time Card)"
+            title="J. Daily Time Record (Time Card)"
             to="/daily-time-record"
           />
           <SubChapter
-            title="A. Certificate of Completion"
+            title="K. Certificate of Completion"
             to="/certificate-of-completion"
           />
           <SubChapter
-            title="A. Certificate of Clearance"
+            title="L. Certificate of Clearance"
             to="/certificate-of-clearance"
           />
           <SubChapter
-            title="A. Pictures during Pre-Service Seminar"
+            title="M. Pictures during Pre-Service Seminar"
             to="/pictures-during-pre-service-seminar"
           />
           <SubChapter
-            title="A. Pictures during Office Works"
+            title="N. Pictures during Office Works"
             to="/pictures-during-office-works"
           />
           <SubChapter
-            title="A. Code of Ethics for CAST Student Internship"
+            title="O. Code of Ethics for CAST Student Internship"
             to="/code-of-ethics-for-cast-student-internship"
           />
-          <SubChapter title="A. Curriculum Vitae" to="/curriculum-vitae" />
+          <SubChapter title="P. Curriculum Vitae" to="/curriculum-vitae" />
           <SubChapter
-            title="A. On-the-Job Training Portfolio Evaluation Form"
+            title="Q. On-the-Job Training Portfolio Evaluation Form"
             to="/on-the-job-training-portfolio-evaluation-form"
           />
         </div>
       </div>
+
       <div
         id="acknowledgements"
         className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
-          <List className="h-8 w-8 mr-3 text-blue-900" />
+          <HandHeart className="h-8 w-8 mr-3 text-blue-900" />
           <h2 className="text-2xl font-bold text-blue-900 leading-none">
             Acknowledgement
           </h2>
+        </div>
+        <div className="mt-6 space-y-4">
+          <Paragraph>
+            I would like to express my heartfelt thanks to everyone who
+            supported me throughout my On-the-Job Training journey.
+          </Paragraph>
+          <Paragraph>
+            To our OJT coordinator,{" "}
+            <b className="text-blue-900">Ms. Marites D. Escultor</b>, thank you
+            for your guidance, encouragement, and constant support.
+          </Paragraph>
+          <Paragraph>
+            To DevOps Outsourcing Inc., especially{" "}
+            <b className="text-blue-900">
+              Mr. Borja Hernandez, Ms. Regina Clautero, Ms. Andrea Castillo, Ms.
+              Rechel Cataluna Punsalan, Ms. Gretchen Failanga, Mr. Ralph Andal,
+              Ms. Laarni Castro, Mr. Eldrich Jonelle Guillermo,
+            </b>{" "}
+            and <b className="text-blue-900">Ms. Jan Mary Arzadon </b> — thank
+            you for sharing your knowledge, mentorship, and valuable life
+            lessons.
+          </Paragraph>
+          <Paragraph>
+            To my fellow interns,{" "}
+            <b className="text-blue-900">Mr. John Mark Salvattera</b>,{" "}
+            <b className="text-blue-900">Ms. Luiza Corine Prado</b>, and{" "}
+            <b className="text-blue-900">Mr. Meljohn Mateo</b> — thank you for
+            the teamwork, support, and fun moments we shared.
+          </Paragraph>
+          <Paragraph>
+            To <b className="text-blue-900">my family and friends</b>, thank you
+            for your unwavering love, encouragement, and understanding
+            throughout this journey.
+          </Paragraph>
+          <Paragraph>
+            And most of all, to <b className="text-blue-900">Almighty God</b>,
+            thank You for the strength, wisdom, and guidance in completing this
+            training.
+          </Paragraph>
+          <Paragraph>
+            This OJT experience has been invaluable, and I am deeply grateful to
+            everyone who contributed to making it a success.
+          </Paragraph>
+        </div>
+      </div>
+
+      <div
+        id="student-trainee-prayer"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        <div className="flex items-center border-b-2 border-b-blue-900 ">
+          <LiaPrayingHandsSolid className="h-8 w-8 mr-3 text-blue-900" />
+          <h2 className="text-2xl font-bold text-blue-900 leading-none">
+            Student Trainee Prayer
+          </h2>
+        </div>
+        <div className="mt-6 space-y-4">
+          <Paragraph>
+            <i>
+              <b className="text-blue-900">Dear Heavenly Father,</b>
+            </i>
+          </Paragraph>
+          <Paragraph>
+            <i>
+              We come before You with grateful hearts as we begin and continue
+              our on-the-job training. Thank You for the opportunity to learn,
+              to grow, and to apply the knowledge we have gained in school into
+              real-life experiences. Guide us each day as we face new
+              challenges, responsibilities, and decisions.
+            </i>
+          </Paragraph>
+          <Paragraph>
+            <i>
+              Grant us wisdom to understand our tasks, patience to improve our
+              skills, and strength to overcome difficulties. Help us to be
+              diligent, respectful, and responsible in all that we do. May we
+              build good relationships with our supervisors, co-workers, and
+              everyone we encounter, showing kindness, humility, and
+              professionalism.
+            </i>
+          </Paragraph>
+          <Paragraph>
+            <i>
+              Protect us from harm and keep us focused on our goals. Remind us
+              to always do our best, not only for our own success, but also to
+              bring honor to our families, our school, and to You.
+            </i>
+          </Paragraph>
+          <Paragraph>
+            <i>
+              As we continue this journey, may we grow not only in knowledge and
+              competence but also in character and integrity. Lead us toward a
+              future filled with purpose and meaningful opportunities.
+            </i>
+          </Paragraph>
+          <Paragraph>
+            <i>All this we ask in Your holy name.</i>
+          </Paragraph>
+          <Paragraph align="right">
+            <i className="flex-end">Amen.</i>
+          </Paragraph>
+        </div>
+      </div>
+
+      <div
+        id="personal-philosophy"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        <div className="flex items-center border-b-2 border-b-blue-900 ">
+          <Brain className="h-8 w-8 mr-3 text-blue-900" />
+          <h2 className="text-2xl font-bold text-blue-900 leading-none">
+            Personal Philosophy
+          </h2>
+        </div>
+        <div className="mt-6 space-y-4">
+          <Paragraph textSize="xl" textColor="blue-900">
+            <i>“Growth Through Learning and Purpose”</i>
+          </Paragraph>
+          <Paragraph>
+            I believe that life is a continuous journey of learning and growth.
+            Every experience, whether success or failure, helps shape my
+            character and improve who I am.
+          </Paragraph>
+          <Paragraph>
+            I value hard work, discipline, and perseverance as keys to achieving
+            success. I always strive to give my best in everything I do, knowing
+            that consistent effort leads to improvement.
+          </Paragraph>
+          <Paragraph>
+            I also believe in treating others with respect, kindness, and
+            humility, as good relationships are important in both personal and
+            professional life.
+          </Paragraph>
+          <Paragraph>
+            With faith, purpose, and integrity, I aim to grow continuously and
+            become a better version of myself each day.
+          </Paragraph>
+        </div>
+      </div>
+
+      <div
+        id="career-plan"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-lg border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        <div className="flex items-center border-b-2 border-b-blue-900 ">
+          <NotebookPen className="h-8 w-8 mr-3 text-blue-900" />
+          <h2 className="text-2xl font-bold text-blue-900 leading-none">
+            Career Plan
+          </h2>
+        </div>
+        <div className="mt-6 space-y-4">
+          <Paragraph textColor="blue-900" textSize="xl" fontType="semibold">
+            Immediate Goals (0-6 Months)
+          </Paragraph>
+          <Paragraph>
+            I aim to continuously improve my knowledge in web development while
+            strengthening my experience in business analysis, with the goal of
+            becoming a Junior Business Analyst. I also plan to create more
+            projects to enhance my skills and improve my GitHub portfolio, while
+            exploring opportunities such as working as a virtual assistant or
+            remote work to gain experience and support my growth in the tech
+            industry.
+          </Paragraph>
+
+          <Paragraph textColor="blue-900" textSize="xl" fontType="semibold">
+            Skill Development Focus
+          </Paragraph>
+          <Paragraph>
+            I plan to study and master React as my current skills are still not
+            strong enough, while also improving my backend development skills in
+            Node.js and learning React Native for mobile development. In
+            addition, I want to gain basic knowledge in DevOps to better
+            understand deployment and modern development workflows. I also aim
+            to take freelance projects to apply and enhance my skills in
+            real-world scenarios, and improve my communication skills so I can
+            effectively interact with future clients. Overall, my goal is to
+            continuously grow as a developer by strengthening both my technical
+            and soft skills through consistent learning and practice.
+          </Paragraph>
+
+          <Paragraph textColor="blue-900" textSize="xl" fontType="semibold">
+            Long-Term Vision
+          </Paragraph>
+          <Paragraph>
+            In the long term, I aim to grow into a skilled professional in both
+            software development and business analysis, eventually becoming a
+            full-stack developer or a senior business analyst. I want to
+            continuously build my expertise by working on real-world systems,
+            contributing to meaningful projects, and applying technology to
+            solve practical problems. I also hope to develop solutions that can
+            benefit underserved communities, especially in my hometown in
+            Occidental Mindoro. Ultimately, my goal is to build a stable and
+            fulfilling career while making a positive impact through technology
+            and continuous innovation.
+          </Paragraph>
+          <hr className="border-gray-200" />
+          <Paragraph textColor="blue-900" textSize="xl" fontType="semibold">
+            Personal Commitment
+          </Paragraph>
+          <Paragraph>
+            I am committed to continuously improving my skills and knowledge in
+            web development and business analysis through consistent learning
+            and practice. I will dedicate myself to building more projects,
+            strengthening my GitHub portfolio, and gaining real-world experience
+            through internships, freelance work, or remote opportunities. I also
+            commit to developing my communication skills to effectively work
+            with clients and teams in the future. Above all, I will remain
+            disciplined, persistent, and open to learning, with the goal of
+            growing into a competent and responsible professional in the tech
+            industry.
+          </Paragraph>
         </div>
       </div>
     </div>
