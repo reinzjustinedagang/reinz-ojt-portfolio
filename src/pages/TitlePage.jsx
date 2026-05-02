@@ -112,12 +112,15 @@ const TitlePage = () => {
           />
           <SubChapter
             title="A. Weekly Accomplishment Report"
-            to="/weekly-accomplishment-report"
+            to="/work-experience#weekly-accomplishment-report"
           />
-          <SubChapter title="B. Daily Time Record" to="/daily-time-record" />
+          <SubChapter
+            title="B. Daily Time Record"
+            to="/work-experience#daily-time-record"
+          />
           <SubChapter
             title="C. Internship Progress Report"
-            to="/internship-progress-report"
+            to="/work-experience#internship-progress-report"
           />
           <SubChapter
             title="D. Internship Analysis Report"

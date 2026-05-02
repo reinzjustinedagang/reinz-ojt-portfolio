@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PiMagnifyingGlassPlusBold } from "react-icons/pi";
 
-const ImageCard = ({ content, image }) => {
+const ImageCard = ({ content, image, className = "" }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -9,9 +9,14 @@ const ImageCard = ({ content, image }) => {
       {/* Card */}
       <div
         onClick={() => setOpen(true)}
-        className="w-114 flex flex-col text-gray-800 font-sans cursor-pointer group"
+        className={`flex flex-col text-gray-800 font-sans cursor-pointer group ${className}`}
       >
-        <div className="relative h-50 mb-3 rounded-xl overflow-hidden shadow-md">
+        <div
+          className="
+            relative w-full h-full
+            mb-3 rounded-xl overflow-hidden shadow-md
+          "
+        >
           <img
             src={image}
             alt="Image"
@@ -26,9 +31,11 @@ const ImageCard = ({ content, image }) => {
           </div>
         </div>
 
-        <p className="text-center text-sm italic text-gray-600 px-2">
-          {content}
-        </p>
+        {content && (
+          <p className="text-center text-sm italic text-gray-600 px-2">
+            {content}
+          </p>
+        )}
       </div>
 
       {/* Modal */}
