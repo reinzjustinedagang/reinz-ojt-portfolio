@@ -1,3 +1,37 @@
+const alignMap = {
+  left: "text-left",
+  right: "text-right",
+  center: "text-center",
+  justify: "text-justify",
+};
+
+const fontMap = {
+  regular: "font-normal",
+  medium: "font-medium",
+  semibold: "font-semibold",
+};
+
+const iconSizeMap = {
+  sm: "w-4 h-4",
+  base: "w-5 h-5",
+  lg: "w-6 h-6",
+  xl: "w-7 h-7",
+};
+const borderMap = {
+  l: "border-l-4 border-l-blue-900",
+  t: "border-t-4 border-t-blue-900",
+  r: "border-r-4 border-r-blue-900",
+  b: "border-b-4 border-b-blue-900",
+};
+
+const sizeMap = {
+  sm: "text-sm",
+  base: "text-base",
+  lg: "text-lg",
+  xl: "text-xl",
+  "2xl": "text-2xl",
+};
+
 export const Paragraph = ({
   children,
   align = "justify",
@@ -5,26 +39,6 @@ export const Paragraph = ({
   textColor = "blue-950",
   fontType = "regular",
 }) => {
-  const alignMap = {
-    left: "text-left",
-    right: "text-right",
-    center: "text-center",
-    justify: "text-justify",
-  };
-
-  const sizeMap = {
-    sm: "text-sm",
-    base: "text-base",
-    lg: "text-lg",
-    xl: "text-xl",
-  };
-
-  const fontMap = {
-    regular: "font-normal",
-    medium: "font-medium",
-    semibold: "font-semibold",
-  };
-
   return (
     <p
       className={`
@@ -43,13 +57,6 @@ export const Paragraph = ({
   );
 };
 
-const iconSizeMap = {
-  sm: "w-4 h-4",
-  base: "w-5 h-5",
-  lg: "w-6 h-6",
-  xl: "w-7 h-7",
-};
-
 export const Card = ({
   icon: Icon,
   title,
@@ -59,21 +66,6 @@ export const Card = ({
   iconSize = "base",
   border = "l",
 }) => {
-  const borderMap = {
-    l: "border-l-4 border-l-blue-900",
-    t: "border-t-4 border-t-blue-900",
-    r: "border-r-4 border-r-blue-900",
-    b: "border-b-4 border-b-blue-900",
-  };
-
-  const sizeMap = {
-    sm: "text-sm",
-    base: "text-base",
-    lg: "text-lg",
-    xl: "text-xl",
-    "2xl": "text-2xl",
-  };
-
   return (
     <div
       className={`bg-transparent rounded-xl shadow-sm p-5 border border-gray-100
@@ -90,6 +82,22 @@ export const Card = ({
       <p className={`${sizeMap[pSize]} text-gray-700 leading-relaxed`}>
         {content}
       </p>
+    </div>
+  );
+};
+
+export const NoIconCard = ({ title, children, border = "l" }) => {
+  return (
+    <div
+      className={`bg-transparent rounded-xl shadow-sm p-5 border border-gray-100
+      ${borderMap[border]} 
+      hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1`}
+    >
+      <div className="flex items-center gap-2 mb-2">
+        <h3 className="text-xl font-semibold text-blue-900">{title}</h3>
+      </div>
+
+      <div>{children}</div>
     </div>
   );
 };

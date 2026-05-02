@@ -1,6 +1,8 @@
 import { BookOpenText } from "lucide-react";
 import bg from "../assets/images/bg.jpg";
 import {
+  FaCartFlatbed,
+  FaChrome,
   FaHandshake,
   FaHeart,
   FaLocationDot,
@@ -8,25 +10,33 @@ import {
   FaUsers,
   FaUsersLine,
 } from "react-icons/fa6";
+import { MdAutoGraph, MdSupportAgent } from "react-icons/md";
+import {
+  GiBookAura,
+  GiEyeTarget,
+  GiFamilyTree,
+  GiPublicSpeaker,
+  GiTrumpetFlag,
+} from "react-icons/gi";
+import { FaCogs, FaPeopleCarry } from "react-icons/fa";
+import { PiFlagBannerFoldFill } from "react-icons/pi";
+import { IoPhonePortraitOutline } from "react-icons/io5";
 import { BsBuildingsFill } from "react-icons/bs";
-import { IoMdCalendar, IoMdFlash } from "react-icons/io";
+import { IoIosPeople, IoMdCalendar, IoMdFlash } from "react-icons/io";
 import devops from "../assets/images/devops.png";
-import { Card, Paragraph } from "../components/Components";
+import { AppCard, Card, Paragraph } from "../components/Components";
 import { RiLeafLine } from "react-icons/ri";
 import ImageCard from "../components/ImageCard";
 import image1 from "../assets/company/image1.png";
 import image2 from "../assets/company/image2.png";
 import image5 from "../assets/company/image5.png";
 import image4 from "../assets/company/image4.png";
-import { MdAutoGraph } from "react-icons/md";
-import {
-  GiBookAura,
-  GiEyeTarget,
-  GiPublicSpeaker,
-  GiTrumpetFlag,
-} from "react-icons/gi";
-import { FaCogs, FaPeopleCarry } from "react-icons/fa";
-import { PiFlagBannerFoldFill } from "react-icons/pi";
+import chart1 from "../assets/organization/image1.jpg";
+import chart2 from "../assets/organization/image2.jpg";
+import chart3 from "../assets/organization/image3.jpg";
+import chart4 from "../assets/organization/image4.jpg";
+import { VscServerProcess } from "react-icons/vsc";
+import { TbSettingsAutomation } from "react-icons/tb";
 
 const Company = () => {
   return (
@@ -60,11 +70,17 @@ const Company = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-6 mt-6 p-5">
           {/* Image */}
-          <div className="w-60 h-60 p-4 shrink-0 shadow-md rounded-xl flex items-center justify-center">
+          <div
+            className="group w-60 h-60 p-4 shrink-0 shadow-md rounded-xl flex items-center justify-center
+  transition-all duration-300 ease-out
+  hover:shadow-xl hover:-translate-y-2 hover:scale-105 cursor-pointer"
+          >
             <img
               src={devops}
               alt="DevOps Outsourcing Inc."
-              className="w-24 h-24 md:w-32 md:h-32 object-contain rounded-lg"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain rounded-lg
+    transition-all duration-300 ease-out
+    group-hover:scale-110"
             />
           </div>
 
@@ -75,7 +91,7 @@ const Company = () => {
             </h2>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              <i>Business Process Done Right.</i>
+              Business Process Done Right.
             </p>
 
             {/* Info rows */}
@@ -120,7 +136,7 @@ const Company = () => {
             A. Nature of the Agency
           </h2>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 mt-6 p-5">
+        <div className="mt-6 w-full text-left">
           <Paragraph>
             DevOps Outsourcing Inc. promotes a collaborative and innovative work
             environment that encourages open communication, continuous learning,
@@ -251,6 +267,198 @@ const Company = () => {
             icon={FaStar}
             title="Service Orientation"
             content="We anticipate our clients' needs by using our expertise to think beyond basic requirements, enhancing our clients experience."
+          />
+        </div>
+      </div>
+
+      <div
+        id="history-and-background"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        <div className="flex items-center border-b-2 border-b-blue-900 ">
+          <RiLeafLine className="h-8 w-8 mr-3 text-blue-900" />
+          <h2 className="text-2xl font-bold text-blue-900 leading-none">
+            C. History and Background
+          </h2>
+        </div>
+
+        <div className="mt-6 w-full text-left">
+          <Paragraph>
+            MOBBIZ Solutions is an emerging company specializing in business
+            process consulting, smart technology solutions, and workforce
+            outsourcing. The company focuses on helping organizations streamline
+            operations, reduce inefficiencies, and improve overall productivity
+            through a combination of strategic consulting, innovative
+            technology, and skilled professionals.
+          </Paragraph>
+        </div>
+
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <AppCard icon={MdSupportAgent} name="Business Process Consulting" />
+          <AppCard icon={FaChrome} name="Web Application Development" />
+          <AppCard
+            icon={IoPhonePortraitOutline}
+            name="Mobile Application Development"
+          />
+        </div>
+
+        <div className="mt-6 w-full text-left">
+          <Paragraph>
+            Although relatively new in the industry, MOBBIZ Solutions has
+            quickly positioned itself as a forward-thinking service provider by
+            offering modern and scalable solutions tailored to the needs of
+            businesses. The company is driven by the goal of transforming
+            traditional workflows into efficient, automated, and data-driven
+            processes that support long-term growth and operational excellence.
+          </Paragraph>
+          <Paragraph>
+            MOBBIZ Solutions provides a comprehensive range of services,
+            including business process consulting, no-code technology platforms,
+            and people outsourcing. Through its consulting services, the company
+            analyzes existing workflows, identifies inefficiencies, and
+            implements optimized solutions to enhance business performance. In
+            addition, its technology platform enables organizations to automate
+            repetitive tasks, integrate systems, and improve coordination across
+            teams using configurable and scalable tools powered by purposeful
+            artificial intelligence.
+          </Paragraph>
+          <Paragraph>
+            The company also offers flexible outsourcing solutions by providing
+            skilled professionals in areas such as information technology,
+            engineering, and digital support. This allows businesses to access
+            the right talent while reducing operational costs and improving
+            efficiency.
+          </Paragraph>
+          <Paragraph>
+            MOBBIZ Solutions follows a structured implementation approach that
+            includes data gathering, workflow design, role assignment, and
+            permission control. This methodology ensures that each solution is
+            aligned with the client's operational needs while maintaining data
+            accuracy, compliance, and consistency. Their platform implementation
+            process emphasizes rapid deployment, allowing businesses to
+            transition from planning to execution within a short period.
+          </Paragraph>
+          <Paragraph>
+            The company is led by its founder, Borja, who brings over 18 years
+            of experience in business process improvement and IT solutions. With
+            a strong background in optimizing operations for global
+            organizations such as Facebook and Bristol Myers Squibb, he has
+            established a leadership approach centered on efficiency,
+            innovation, and scalable impact. His experience, combined with a
+            team of skilled consultants and technology experts, enables MOBBIZ
+            Solutions to deliver high-quality and future-ready business
+            solutions.
+          </Paragraph>
+          <Paragraph>
+            As a growing company, MOBBIZ Solutions aims to continuously adapt to
+            technological advancements and industry trends. By combining
+            strategy, technology, and people, the company strives to help
+            businesses operate more efficiently, make smarter decisions, and
+            scale sustainably in an increasingly competitive environment.
+          </Paragraph>
+        </div>
+      </div>
+
+      <div
+        id="organizational-structural"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        <div className="flex items-center border-b-2 border-b-blue-900 ">
+          <GiFamilyTree className="h-8 w-8 mr-3 text-blue-900" />
+          <h2 className="text-2xl font-bold text-blue-900 leading-none">
+            D. Organizational Structure
+          </h2>
+        </div>
+
+        <div className="my-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+          <ImageCard image={chart1} />
+          <ImageCard image={chart2} />
+          <ImageCard image={chart3} />
+          <ImageCard image={chart4} />
+        </div>
+      </div>
+
+      <div
+        id="products-and-service"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        <div className="flex items-center border-b-2 border-b-blue-900 ">
+          <FaCartFlatbed className="h-8 w-8 mr-3 text-blue-900" />
+          <h2 className="text-2xl font-bold text-blue-900 leading-none">
+            E. Products and Service
+          </h2>
+        </div>
+        <div className="mt-6 w-full text-left">
+          <Paragraph>
+            MOBBIZ Solutions delivers integrated products and services focused
+            on business process improvement, smart technology implementation,
+            and workforce outsourcing. These services help organizations
+            streamline operations, reduce inefficiencies, and achieve
+            sustainable growth.
+          </Paragraph>
+        </div>
+        <div className="mt-6 w-full text-left space-y-6">
+          <Card
+            icon={VscServerProcess}
+            title="Business Process Consulting"
+            content="MOBBIZ Solutions offers Business Process Consulting services that
+            help organizations analyze, refine, and optimize their operations to
+            achieve greater efficiency and compliance. The company focuses on
+            identifying inefficiencies, improving workflows, and aligning
+            business processes with organizational goals to support long-term
+            success. Through process optimization, compliance and risk
+            management, and effective strategy execution, MOBBIZ ensures that
+            operations are streamlined and performance-driven. In addition, the
+            service provides value through workflow assessment, gap analysis,
+            process re-engineering, automation strategies, and KPI-based
+            performance tracking, enabling businesses to operate more
+            effectively and make informed decisions."
+            iconSize="xl"
+            h3Size="xl"
+            pSize="base"
+          />
+          <Card
+            icon={TbSettingsAutomation}
+            title="Technology Solutions"
+            content="MOBBIZ Solutions provides Technology Solutions focused on developing
+            and implementing custom platforms, smart applications, and
+            automation tools designed to improve efficiency and support business
+            growth. Leveraging its no-code Business Process Manager, the company
+            enables organizations to automate repetitive tasks, reduce errors,
+            and enhance workflow integration and data flow. Its services include
+            the development of scalable, cloud-based systems such as custom
+            business operations platforms, CRM solutions, and mobile and web
+            applications, as well as system integration services tailored to
+            specific business needs. Additionally, MOBBIZ incorporates
+            purpose-driven artificial intelligence through embedded features and
+            on-demand AI agents to further boost productivity and handle routine
+            processes. These solutions deliver added value by reducing
+            operational costs, improving efficiency and user experience, and
+            enabling data-driven decision-making."
+            iconSize="xl"
+            h3Size="xl"
+            pSize="base"
+          />
+          <Card
+            icon={IoIosPeople}
+            title="People Outsourcing"
+            content="MOBBIZ Solutions offers People Outsourcing services that provide
+            businesses with skilled professionals to support their operations
+            without the complexities of in-house hiring. The company supplies a
+            wide range of talent across various fields, including IT and digital
+            support, software development and engineering, IT infrastructure,
+            data and AI, business intelligence, cloud and DevOps, cybersecurity,
+            project and product management, digital marketing, and BIM
+            engineering. Through this service, organizations can access
+            specialized expertise tailored to their needs while maintaining
+            flexibility and scalability in their workforce. By combining process
+            outsourcing with industry-specific knowledge, MOBBIZ enables
+            businesses to reduce costs, improve efficiency, and focus on their
+            core operations while ensuring high-quality and reliable talent
+            support."
+            iconSize="xl"
+            h3Size="xl"
+            pSize="base"
           />
         </div>
       </div>

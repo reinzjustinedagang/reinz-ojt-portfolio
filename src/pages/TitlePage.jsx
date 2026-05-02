@@ -100,11 +100,11 @@ const TitlePage = () => {
           />
           <SubChapter
             title="C.History/Background of the Agency/Office"
-            to="/history-background-of-the-agency-office"
+            to="/company#history-and-background"
           />
           <SubChapter
             title="D. Organizational Structure"
-            to="/organizational-structure"
+            to="/company#organizational-structure"
           />
           <TopChapter
             title="Chapter III: Work Experiences"
