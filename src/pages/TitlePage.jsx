@@ -55,7 +55,7 @@ const TitlePage = () => {
 
       <div
         id="table-of-contents"
-        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100 overflow-hidden"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <List className="h-8 w-8 mr-3 text-blue-900" />
