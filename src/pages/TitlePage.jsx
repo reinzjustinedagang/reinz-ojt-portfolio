@@ -124,7 +124,7 @@ const TitlePage = () => {
           />
           <SubChapter
             title="D. Internship Analysis Report"
-            to="/internship-analysis-report"
+            to="/work-experience#internship-analysis-report"
           />
           <TopChapter
             title="Chapter IV: Assessment of the Practicum Program"

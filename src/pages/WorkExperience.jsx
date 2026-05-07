@@ -4,6 +4,11 @@ import WeeklyReportCard from "../components/WeeklyReportCard";
 import { weeklyReports } from "../data/weeklyReports";
 import { useState } from "react";
 import { dailyTimeRecords } from "../data/dailyTimeRecords";
+import progress_report from "../pdf/progress.pdf";
+import analysis_report from "../pdf/analysis-report.pdf";
+import { MdAccessTime } from "react-icons/md";
+import { GiProgression } from "react-icons/gi";
+import { TbAnalyzeFilled } from "react-icons/tb";
 
 const WorkExperience = () => {
   const [selectedWeek, setSelectedWeek] = useState(weeklyReports[0].id);
@@ -35,7 +40,7 @@ const WorkExperience = () => {
       </div>
 
       <div
-        id="weekly-accomplisment-report"
+        id="weekly-accomplishment-report"
         className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
@@ -72,7 +77,7 @@ const WorkExperience = () => {
         className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
-          <LiaCalendarWeekSolid className="h-8 w-8 mr-3 text-blue-900" />
+          <MdAccessTime className="h-8 w-8 mr-3 text-blue-900" />
           <h2 className="text-2xl font-bold text-blue-900 leading-none">
             B. Daily Time Record
           </h2>
@@ -100,12 +105,12 @@ const WorkExperience = () => {
         <div
           className={`mt-6 gap-6 ${
             filteredPDFs.length === 1
-              ? "grid grid-cols-1 place-items-center"
+              ? "grid grid-cols-1 place-items-start"
               : "grid grid-cols-1 md:grid-cols-2"
           }`}
         >
           {filteredPDFs.map((item) => (
-            <div key={item.id} className="w-full max-w-3xl">
+            <div key={item.id} className="w-full">
               <div className="w-full h-150 border rounded-lg overflow-hidden shadow">
                 <iframe
                   src={item.source}
@@ -115,6 +120,50 @@ const WorkExperience = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div
+        id="internship-reports"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        {/* Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* C */}
+          <div className="flex flex-col">
+            <div className="flex items-center border-b-2 border-b-blue-900">
+              <GiProgression className="h-8 w-8 mr-3 text-blue-900" />
+              <h2 className="text-2xl font-bold text-blue-900 leading-none">
+                C. Internship Progress Reports
+              </h2>
+            </div>
+
+            <div className="mt-6 w-full h-125 border rounded-lg overflow-hidden shadow">
+              <iframe
+                src={progress_report}
+                title="progress report"
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+
+          {/* D */}
+          <div className="flex flex-col">
+            <div className="flex items-center border-b-2 border-b-blue-900">
+              <TbAnalyzeFilled className="h-8 w-8 mr-3 text-blue-900" />
+              <h2 className="text-2xl font-bold text-blue-900 leading-none">
+                D. Internship Analysis Reports
+              </h2>
+            </div>
+
+            <div className="mt-6 w-full h-125 border rounded-lg overflow-hidden shadow">
+              <iframe
+                src={analysis_report}
+                title="analysis report"
+                className="w-full h-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

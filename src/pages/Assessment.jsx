@@ -1,4 +1,8 @@
 import bg from "../assets/images/bg.jpg";
+import { TbAnalyzeFilled } from "react-icons/tb";
+import evaluation from "../pdf/eval.pdf";
+import { Paragraph } from "../components/Components";
+import RatingsOverview from "../components/RatingsOverview";
 
 const Assessment = () => {
   return (
@@ -17,6 +21,37 @@ const Assessment = () => {
           <p className="text-2xl text-gray-600 mb-14">
             Evaluation and Performance Review
           </p>
+        </div>
+      </div>
+
+      <div
+        id="internship-analysis-report"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+      >
+        <div className="flex items-center border-b-2 border-b-blue-900 ">
+          <TbAnalyzeFilled className="h-8 w-8 mr-3 text-blue-900" />
+          <h2 className="text-2xl font-bold text-blue-900 leading-none">
+            C. Internship Analysis Report
+          </h2>
+        </div>
+
+        <div className="mt-6 gap-6 grid grid-cols-1 place-items-start">
+          <div className="w-full">
+            <div className="w-full h-150 border rounded-lg overflow-hidden shadow">
+              <iframe
+                src={evaluation}
+                title="progress report"
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 space-y-4">
+          <Paragraph textColor="blue-900" textSize="xl" fontType="semibold">
+            Performance Evaluation Summary
+          </Paragraph>
+          <RatingsOverview />
         </div>
       </div>
     </div>

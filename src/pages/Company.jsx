@@ -170,6 +170,7 @@ const Company = () => {
             iconSize="xl"
             h3Size="xl"
             pSize="base"
+            border="t"
           />
           <Card
             icon={MdAutoGraph}
@@ -178,6 +179,7 @@ const Company = () => {
             iconSize="xl"
             h3Size="xl"
             pSize="base"
+            border="t"
           />
           <Card
             icon={GiPublicSpeaker}
@@ -186,6 +188,7 @@ const Company = () => {
             iconSize="xl"
             h3Size="xl"
             pSize="base"
+            border="t"
           />
           <Card
             icon={FaCogs}
@@ -194,6 +197,7 @@ const Company = () => {
             iconSize="xl"
             h3Size="xl"
             pSize="base"
+            border="t"
           />
         </div>
       </div>

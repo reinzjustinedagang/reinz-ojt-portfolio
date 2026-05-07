@@ -2,8 +2,7 @@ import data_encoding from "../pdf/data-encoding.pdf";
 import meeting from "../pdf/meeting.pdf";
 import activity from "../pdf/activity.pdf";
 import regression_testing from "../pdf/regression-testing.pdf";
-import all_1 from "../pdf/all-1.pdf";
-import all_2 from "../pdf/all-2.pdf";
+import all from "../pdf/all.pdf";
 
 export const dailyTimeRecords = [
   {
@@ -29,11 +28,6 @@ export const dailyTimeRecords = [
   {
     id: "dtr5",
     type: "All",
-    source: all_1,
-  },
-  {
-    id: "dtr6",
-    type: "All",
-    source: all_2,
+    source: all,
   },
 ];
