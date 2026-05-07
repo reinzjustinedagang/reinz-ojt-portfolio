@@ -49,7 +49,9 @@ export const AppendixCard = ({ label, title, images }) => {
             </h2>
           </div>
 
-          <p className="text-sm text-gray-500 mt-3">{images.length} page(s)</p>
+          <p className="text-sm text-gray-500 mt-3">
+            {images.length} page{images.length > 1 ? "s" : ""}
+          </p>
         </div>
       </div>
 

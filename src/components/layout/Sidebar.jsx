@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import {
   HomeIcon,
   FolderOpen,
@@ -8,32 +7,33 @@ import {
   FileStack,
 } from "lucide-react";
 import profile from "../../assets/images/profile.jpg";
+import { NavHashLink } from "react-router-hash-link";
 
 const Sidebar = ({ closeSidebar }) => {
   const menuItems = [
-    { to: "/", label: "Title Page", icon: HomeIcon },
+    { to: "/#title-page", label: "Title Page", icon: HomeIcon },
     {
-      to: "/introduction",
+      to: "/introduction#title-page",
       label: "I. Introduction",
       icon: FolderOpen,
     },
     {
-      to: "/company",
+      to: "/company#title-page",
       label: "II. Company Profile",
       icon: Building2,
     },
     {
-      to: "/work-experience",
+      to: "/work-experience#title-page",
       label: "III. Work Experience",
       icon: BriefcaseBusiness,
     },
     {
-      to: "/assessment",
+      to: "/assessment#title-page",
       label: "IV. Assessment",
       icon: ClipboardCheck,
     },
     {
-      to: "/appendices",
+      to: "/appendices#title-page",
       label: "Appendices",
       icon: FileStack,
     },
@@ -66,8 +66,9 @@ const Sidebar = ({ closeSidebar }) => {
       {/* NAVIGATION */}
       <nav className="flex-1 space-y-2">
         {menuItems.map(({ to, label, icon: Icon }) => (
-          <NavLink
+          <NavHashLink
             key={to}
+            smooth
             to={to}
             onClick={() => closeSidebar?.()}
             className={({ isActive }) =>
@@ -80,7 +81,7 @@ const Sidebar = ({ closeSidebar }) => {
           >
             <Icon className="h-5 w-5 mr-3" />
             {label}
-          </NavLink>
+          </NavHashLink>
         ))}
       </nav>
 
