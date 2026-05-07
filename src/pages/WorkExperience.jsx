@@ -3,22 +3,16 @@ import { LiaCalendarWeekSolid } from "react-icons/lia";
 import WeeklyReportCard from "../components/WeeklyReportCard";
 import { weeklyReports } from "../data/weeklyReports";
 import { useState } from "react";
-import { dailyTimeRecords } from "../data/dailyTimeRecords";
 import progress_report from "../pdf/progress.pdf";
 import analysis_report from "../pdf/analysis-report.pdf";
 import { MdAccessTime } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
 import { TbAnalyzeFilled } from "react-icons/tb";
+import CalendarTimesheet from "../components/CalendarTimesheet";
 
 const WorkExperience = () => {
   const [selectedWeek, setSelectedWeek] = useState(weeklyReports[0].id);
-  const [selectedType, setSelectedType] = useState("All");
-
   const selectedData = weeklyReports.find((week) => week.id === selectedWeek);
-
-  const filteredPDFs = dailyTimeRecords.filter(
-    (item) => item.type === selectedType,
-  );
 
   return (
     <div className="min-h-full flex flex-col items-center justify-between text-gray-800 gap-10">
@@ -41,7 +35,7 @@ const WorkExperience = () => {
 
       <div
         id="weekly-accomplishment-report"
-        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
+        className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100 overflow-hidden"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <LiaCalendarWeekSolid className="h-8 w-8 mr-3 text-blue-900" />
@@ -82,45 +76,7 @@ const WorkExperience = () => {
             B. Daily Time Record
           </h2>
         </div>
-        <div className="mt-6 space-y-4">
-          <div className="flex items-center">
-            <label htmlFor="cars" className="text-blue-900 font-semibold mr-3">
-              Select Type:
-            </label>
-
-            <select
-              value={selectedType}
-              onChange={(e) => setSelectedType(e.target.value)}
-              className="bg-white border border-blue-900 text-blue-900 font-medium px-4 py-2 rounded-lg shadow-sm 
-  focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700 cursor-pointer"
-            >
-              <option value="All">All</option>
-              <option value="Meeting">Meeting</option>
-              <option value="Activity">Activity</option>
-              <option value="Regression Testing">Regression Testing</option>
-              <option value="Data Encoding">Data Encoding</option>
-            </select>
-          </div>
-        </div>
-        <div
-          className={`mt-6 gap-6 ${
-            filteredPDFs.length === 1
-              ? "grid grid-cols-1 place-items-start"
-              : "grid grid-cols-1 md:grid-cols-2"
-          }`}
-        >
-          {filteredPDFs.map((item) => (
-            <div key={item.id} className="w-full">
-              <div className="w-full h-150 border rounded-lg overflow-hidden shadow">
-                <iframe
-                  src={item.source}
-                  title={item.id}
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
+        <CalendarTimesheet />
       </div>
 
       <div
