@@ -29,6 +29,7 @@ import cv_2 from "../assets/cv/cv2.jpg";
 import week12 from "../assets/weekly/week 12.png";
 import week13 from "../assets/weekly/week 13.png";
 import week10 from "../assets/weekly/week 10.png";
+import ethics from "../assets/one_page/ethics.png";
 
 export const appendixItems = [
   {
@@ -104,7 +105,7 @@ export const appendixItems = [
   {
     label: "O",
     title: "Code of Ethics for CAST Student Internship",
-    images: [],
+    images: [ethics],
   },
   {
     label: "P",
