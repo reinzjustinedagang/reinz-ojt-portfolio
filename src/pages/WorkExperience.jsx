@@ -130,7 +130,7 @@ const WorkExperience = () => {
         {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* C */}
-          <div className="flex flex-col">
+          <div id="internship-progress-report" className="flex flex-col">
             <div className="flex items-center border-b-2 border-b-blue-900">
               <GiProgression className="h-8 w-8 mr-3 text-blue-900" />
               <h2 className="text-2xl font-bold text-blue-900 leading-none">
@@ -148,7 +148,7 @@ const WorkExperience = () => {
           </div>
 
           {/* D */}
-          <div className="flex flex-col">
+          <div id="internship-analysis-report" className="flex flex-col">
             <div className="flex items-center border-b-2 border-b-blue-900">
               <TbAnalyzeFilled className="h-8 w-8 mr-3 text-blue-900" />
               <h2 className="text-2xl font-bold text-blue-900 leading-none">

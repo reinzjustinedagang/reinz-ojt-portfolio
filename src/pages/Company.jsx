@@ -288,15 +288,27 @@ const Company = () => {
 
         <div className="mt-6 w-full text-left">
           <Paragraph>
-            MOBBIZ Solutions is an emerging company specializing in business
-            process consulting, smart technology solutions, and workforce
-            outsourcing. The company focuses on helping organizations streamline
-            operations, reduce inefficiencies, and improve overall productivity
-            through a combination of strategic consulting, innovative
-            technology, and skilled professionals.
+            DevOps Outsourcing Inc. is a start-up company based in Makati,
+            National Capital Region, Philippines. It was stablished in 2017 and
+            specializes in offering business process consulting to companies,
+            along with designing tailor-made IT solutions - mainly web and
+            mobile applications made from scratch.
+          </Paragraph>
+
+          <Paragraph>
+            The company operates under the principle that businesses should not
+            have to bend their processes to fit rigid, mass-market software.
+            Instead, DevOps craft custom solutions that truly address each
+            client's unique challenges. Its flagship product, Mobbiz, is a
+            Software-as-a-Service (SaaS) platform for business process
+            management, built to serve real-world operational needs.
+          </Paragraph>
+          <Paragraph>
+            Over the years, DevOps Outsourcing Inc. has grown into a trusted IT
+            consulting firm, shifting the market away from one-size-fits-all
+            solutions and delivering services clients can genuinely rely on.
           </Paragraph>
         </div>
-
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <AppCard icon={MdSupportAgent} name="Business Process Consulting" />
           <AppCard icon={FaChrome} name="Web Application Development" />
@@ -305,60 +317,48 @@ const Company = () => {
             name="Mobile Application Development"
           />
         </div>
-
         <div className="mt-6 w-full text-left">
-          <Paragraph>
-            Although relatively new in the industry, MOBBIZ Solutions has
-            quickly positioned itself as a forward-thinking service provider by
-            offering modern and scalable solutions tailored to the needs of
-            businesses. The company is driven by the goal of transforming
-            traditional workflows into efficient, automated, and data-driven
-            processes that support long-term growth and operational excellence.
+          <Paragraph textColor="blue-900" textSize="xl" fontType="semibold">
+            Company Timeline
+          </Paragraph>
+          <Paragraph textColor="blue-900" fontType="semibold">
+            2017 - Company Founded
           </Paragraph>
           <Paragraph>
-            MOBBIZ Solutions provides a comprehensive range of services,
-            including business process consulting, no-code technology platforms,
-            and people outsourcing. Through its consulting services, the company
-            analyzes existing workflows, identifies inefficiencies, and
-            implements optimized solutions to enhance business performance. In
-            addition, its technology platform enables organizations to automate
-            repetitive tasks, integrate systems, and improve coordination across
-            teams using configurable and scalable tools powered by purposeful
-            artificial intelligence.
+            DevOps Outsourcing Inc. was established in Makati City, Philippines,
+            as an IT services and consulting start-up with a mission to provide
+            bespoke professional services. The company was built to address the
+            nuanced challenges that mass-market software solutions fail to
+            solve.
+          </Paragraph>
+          <Paragraph textColor="blue-900" fontType="semibold">
+            2018-2020 - Mobbiz Saas Platform Development
           </Paragraph>
           <Paragraph>
-            The company also offers flexible outsourcing solutions by providing
-            skilled professionals in areas such as information technology,
-            engineering, and digital support. This allows businesses to access
-            the right talent while reducing operational costs and improving
-            efficiency.
+            The company developed and launched Mobbiz - a Software-as-a-Service
+            platform designed for business process management. This product
+            became the core offering, allowing client businesses to manage
+            operations digitally through both web and mobile applications.
+          </Paragraph>
+          <Paragraph textColor="blue-900" fontType="semibold">
+            2021-2023 - Expansion of IT Services & Team Growth
           </Paragraph>
           <Paragraph>
-            MOBBIZ Solutions follows a structured implementation approach that
-            includes data gathering, workflow design, role assignment, and
-            permission control. This methodology ensures that each solution is
-            aligned with the client's operational needs while maintaining data
-            accuracy, compliance, and consistency. Their platform implementation
-            process emphasizes rapid deployment, allowing businesses to
-            transition from planning to execution within a short period.
+            DevOps expanded its service offerings to include QA testing, system
+            documentation, and requirements gathering - building a
+            multi-disciplinary team of developers, business analysts, and QA
+            engineers. The company also began collaborating with universities
+            for student internship programs.
           </Paragraph>
           <Paragraph>
-            The company is led by its founder, Borja, who brings over 18 years
-            of experience in business process improvement and IT solutions. With
-            a strong background in optimizing operations for global
-            organizations such as Facebook and Bristol Myers Squibb, he has
-            established a leadership approach centered on efficiency,
-            innovation, and scalable impact. His experience, combined with a
-            team of skilled consultants and technology experts, enables MOBBIZ
-            Solutions to deliver high-quality and future-ready business
-            solutions.
-          </Paragraph>
-          <Paragraph>
-            As a growing company, MOBBIZ Solutions aims to continuously adapt to
-            technological advancements and industry trends. By combining
-            strategy, technology, and people, the company strives to help
-            businesses operate more efficiently, make smarter decisions, and
-            scale sustainably in an increasingly competitive environment.
+            <i>
+              “Business Process Done Right. We believe you should not need to
+              trade away value as part of scalable solutions or have to bend
+              your business to rigid solutions - shifting the market away from a
+              race to the bottom and bringing about services our clients can
+              trust”
+            </i>
+            <p>- DevOps Outsourcing Inc. Mission Statement</p>
           </Paragraph>
         </div>
       </div>

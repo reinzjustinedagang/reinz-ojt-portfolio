@@ -25,13 +25,13 @@ const Assessment = () => {
       </div>
 
       <div
-        id="internship-analysis-report"
+        id="student-internship-evaluation"
         className="bg-white flex flex-col w-full flex-1 text-left p-12 rounded-xl border-t-5 border-t-blue-900 border-b-2 border-b-gray-100"
       >
         <div className="flex items-center border-b-2 border-b-blue-900 ">
           <TbAnalyzeFilled className="h-8 w-8 mr-3 text-blue-900" />
           <h2 className="text-2xl font-bold text-blue-900 leading-none">
-            C. Internship Analysis Report
+            C. Student Internship Evaluation Form
           </h2>
         </div>
 

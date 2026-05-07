@@ -73,7 +73,10 @@ const TitlePage = () => {
           />
           <TopChapter title="Personal Philosophy" to="#personal-philosophy" />
           <TopChapter title="Career Plan" to="#career-plan" />
-          <TopChapter title="Chapter I: Introduction" to="/introduction" />
+          <TopChapter
+            title="Chapter I: Introduction"
+            to="/introduction#title-page"
+          />
           <SubChapter
             title="A. Importance of Internship"
             to="/introduction#importance-of-internship"
@@ -88,7 +91,7 @@ const TitlePage = () => {
           />
           <TopChapter
             title="Chapter II: Company Profile"
-            to="/company#company-profile"
+            to="/company#title-page"
           />
           <SubChapter
             title="A. Nature of the Agency"
@@ -108,7 +111,7 @@ const TitlePage = () => {
           />
           <TopChapter
             title="Chapter III: Work Experiences"
-            to="/work-experience"
+            to="/work-experience#title-page"
           />
           <SubChapter
             title="A. Weekly Accomplishment Report"
@@ -128,65 +131,71 @@ const TitlePage = () => {
           />
           <TopChapter
             title="Chapter IV: Assessment of the Practicum Program"
-            to="/assessment"
+            to="/assessment#title-page"
           />
           <SubChapter
             title="A. Student Internship Evaluation"
-            to="/student-internship-evaluation Form"
+            to="/assessment#student-internship-evaluation"
           />
           <TopChapter title="Chapter V: Appendices" to="/appendices" />
-          <SubChapter title="A. Evaluation Form" to="/evaluation-form" />
+          <SubChapter
+            title="A. Evaluation Form"
+            to="/appendices#evaluation-form"
+          />
           <SubChapter
             title="B. Photocopy Registration Form"
-            to="/photocopy-registration-form"
+            to="/appendices#photocopy-registration-form"
           />
           <SubChapter
             title="C. Photocopy Validated ID"
-            to="/photocopy-validates-id"
+            to="/appendices#photocopy-validates-id"
           />
           <SubChapter title="D. Parent's Consent" to="/parents-consent" />
           <SubChapter
             title="E. Medical Certificate"
-            to="/medical-certificate"
+            to="/appendices#medical-certificate"
           />
           <SubChapter
             title="F. Certificate of Good Moral Character & Application Letter"
-            to="/certificate-of-good-moral-character-and-application-letter"
+            to="/appendices#good-moral-character"
           />
-          <SubChapter title="G. Application Letter" to="/application-letter" />
-          <SubChapter title="H. Endorsement Letter" to="/endorsement-letter" />
           <SubChapter
-            title="I. Memorandum of Agreement"
-            to="/memorandum-of-agreement"
+            title="G. Application Letter"
+            to="/appendices#application-letter"
           />
+          <SubChapter
+            title="H. Endorsement Letter"
+            to="/appendices#endorsement-letter"
+          />
+          <SubChapter title="I. Memorandum of Agreement" to="/appendices#moa" />
           <SubChapter
             title="J. Daily Time Record (Time Card)"
-            to="/daily-time-record"
+            to="/appendices#daily-time-record"
           />
           <SubChapter
             title="K. Certificate of Completion"
-            to="/certificate-of-completion"
+            to="/appendices#certificate-of-completion"
           />
           <SubChapter
             title="L. Certificate of Clearance"
-            to="/certificate-of-clearance"
+            to="/appendices#certificate-of-clearance"
           />
           <SubChapter
             title="M. Pictures during Pre-Service Seminar"
-            to="/pictures-during-pre-service-seminar"
+            to="/appendices#pre-service-seminar"
           />
           <SubChapter
             title="N. Pictures during Office Works"
-            to="/pictures-during-office-works"
+            to="/appendices#office-works"
           />
           <SubChapter
             title="O. Code of Ethics for CAST Student Internship"
-            to="/code-of-ethics-for-cast-student-internship"
+            to="/appendices#code-of-ethics"
           />
           <SubChapter title="P. Curriculum Vitae" to="/curriculum-vitae" />
           <SubChapter
             title="Q. On-the-Job Training Portfolio Evaluation Form"
-            to="/on-the-job-training-portfolio-evaluation-form"
+            to="/appendices#on-the-job-training-portfolio"
           />
         </div>
       </div>
@@ -203,13 +212,22 @@ const TitlePage = () => {
         </div>
         <div className="mt-6 space-y-4">
           <Paragraph>
-            I would like to express my heartfelt thanks to everyone who
-            supported me throughout my On-the-Job Training journey.
+            I would like to express my deepest gratitude to{" "}
+            <b className="text-blue-900">Almighty God</b> for granting me the
+            strength, wisdom, and guidance to successfully complete my
+            On-the-Job Training journey.
+          </Paragraph>
+          <Paragraph>
+            To my <b className="text-blue-900">beloved parents</b>, thank you
+            for your unconditional love, unwavering support, and encouragement
+            throughout this journey. Your sacrifices and belief in me have been
+            my greatest source of motivation.
           </Paragraph>
           <Paragraph>
             To our OJT coordinator,{" "}
             <b className="text-blue-900">Ms. Marites D. Escultor</b>, thank you
-            for your guidance, encouragement, and constant support.
+            for your guidance, patience, and continuous support that helped
+            shape this meaningful experience.
           </Paragraph>
           <Paragraph>
             To DevOps Outsourcing Inc., especially{" "}
@@ -218,30 +236,22 @@ const TitlePage = () => {
               Rechel Cataluna Punsalan, Ms. Gretchen Failanga, Mr. Ralph Andal,
               Ms. Laarni Castro, Mr. Eldrich Jonelle Guillermo,
             </b>{" "}
-            and <b className="text-blue-900">Ms. Jan Mary Arzadon </b> — thank
-            you for sharing your knowledge, mentorship, and valuable life
-            lessons.
+            and <b className="text-blue-900">Ms. Jan Mary Arzadon </b> — Thank
+            you for your mentorship, for sharing your expertise, and for the
+            valuable lessons that contributed to my growth both professionally
+            and personally.
           </Paragraph>
           <Paragraph>
             To my fellow interns,{" "}
             <b className="text-blue-900">Mr. John Mark Salvattera</b>,{" "}
             <b className="text-blue-900">Ms. Luiza Corine Prado</b>, and{" "}
             <b className="text-blue-900">Mr. Meljohn Mateo</b> — thank you for
-            the teamwork, support, and fun moments we shared.
-          </Paragraph>
-          <Paragraph>
-            To <b className="text-blue-900">my family and friends</b>, thank you
-            for your unwavering love, encouragement, and understanding
+            the teamwork, camaraderie, and memorable moments we shared
             throughout this journey.
           </Paragraph>
           <Paragraph>
-            And most of all, to <b className="text-blue-900">Almighty God</b>,
-            thank You for the strength, wisdom, and guidance in completing this
-            training.
-          </Paragraph>
-          <Paragraph>
-            This OJT experience has been invaluable, and I am deeply grateful to
-            everyone who contributed to making it a success.
+            This OJT experience has been truly invaluable, and I am deeply
+            grateful to everyone who became part of this success.
           </Paragraph>
         </div>
       </div>
@@ -264,35 +274,32 @@ const TitlePage = () => {
           </Paragraph>
           <Paragraph>
             <i>
-              We come before You with grateful hearts as we begin and continue
-              our on-the-job training. Thank You for the opportunity to learn,
-              to grow, and to apply the knowledge we have gained in school into
-              real-life experiences. Guide us each day as we face new
-              challenges, responsibilities, and decisions.
+              Thank You for guiding us through our on-the-job training and for
+              the strength, wisdom, and perseverance You have given us every
+              step of the way.
             </i>
           </Paragraph>
           <Paragraph>
             <i>
-              Grant us wisdom to understand our tasks, patience to improve our
-              skills, and strength to overcome difficulties. Help us to be
-              diligent, respectful, and responsible in all that we do. May we
-              build good relationships with our supervisors, co-workers, and
-              everyone we encounter, showing kindness, humility, and
-              professionalism.
+              We lift up to You our parents with grateful hearts. Thank You for
+              blessing them with strength in their daily work, for their
+              sacrifices, and for their endless love that made our education
+              possible. Their hard work and dedication inspire us, and we are
+              deeply thankful for the lives You have given through them.
             </i>
           </Paragraph>
           <Paragraph>
             <i>
-              Protect us from harm and keep us focused on our goals. Remind us
-              to always do our best, not only for our own success, but also to
-              bring honor to our families, our school, and to You.
+              Thank You for giving us courage, wisdom, and determination to
+              pursue our dreams and not give up despite challenges. As we move
+              forward, continue to guide us in our journey, helping us grow in
+              knowledge, character, and faith.
             </i>
           </Paragraph>
           <Paragraph>
             <i>
-              As we continue this journey, may we grow not only in knowledge and
-              competence but also in character and integrity. Lead us toward a
-              future filled with purpose and meaningful opportunities.
+              May we always honor You, our families, and all those who supported
+              us through our actions and achievements.
             </i>
           </Paragraph>
           <Paragraph>
